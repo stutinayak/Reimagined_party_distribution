@@ -53,3 +53,6 @@ In order to understand the analysis of the dimensionality reduction better: the 
 For a highly-available, fault-tolerant, and low latency cloud architecture: it is a good practice to decouple your storage layer and compute/analytics components. This is to ensure that failure of one component does not lead to the failure of the whole architecture. For this use-case ![Amazon EMR](https://aws.amazon.com/emr/?whats-new-cards.sort-by=item.additionalFields.postDateTime&whats-new-cards.sort-order=desc) would be a good choice. Please refer to the following sketch that could be a possible workflow. The architecture also has a component of auto-scaling which is cost-effective and helps to automatically manage a large traffic. After the workflow, the security settings and access management should be decided together with the team and the stakeholders.
 
 ![Image of Cloud Architecture](https://github.com/stutinayak/Reimagined_party_distribution/blob/master/images/Cloud%20architecture.png)
+
+
+Final Note: The folder _experiments_ contains files where initial data exploration was performed, this can be checked in order to see the thought process (in case the time permits). The folder _images_ contains all the plots and diagrams. 
