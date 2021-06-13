@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  party:
+    build: .
+    image: party
+    volumes:
+      - ".:/home"  
+    ports: 
+      - 8889:8889
