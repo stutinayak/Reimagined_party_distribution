@@ -19,6 +19,8 @@ columns where the description was not clear were also dropped - for e.g. the col
 
 	2.  for continuous values (floats), use the median
 
+Additionally, more complex imputations like k-Nearest Neighbour imputation or Iterative imputation could also be explored for preprocessing. As the dataset was not that large, mean/median imputation was used.
+
 #### Part II: Dimensionality Reduction ####
 
 * For performing dimensionality reduction the data needs to be scaled in a uniform range
@@ -34,10 +36,10 @@ columns where the description was not clear were also dropped - for e.g. the col
 
 ### Part B ###
 
-In order to understand the analysis of the dimensionality reduction better: the features that are of highest importance need to be extracted from the respective principal components. When extracted the two most important feature for the principal components were: *”nationalism and deregulation*. So the politicians can build their campaign agenda around these two points. Furthermore, the analysis can be shown to a domain expert who could make a game plan for political party’s future actions, policies etc. 
+In order to understand the analysis of the dimensionality reduction better: the features that are of highest importance need to be extracted from the respective principal components. When extracted the two most important feature for the principal components were: *nationalism and deregulation*. So the politicians can build their campaign agenda around these two points. Furthermore, the analysis can be shown to a domain expert who could make a game plan for political party’s future actions, policies etc. 
 
 ### Part C ###
 
-For a highly-available, fault-tolerant, and low latency cloud architecture: it is a good practice to decouple your storage layer and compute/analytics components. This is to ensure that failure of one component does not lead to the failure of the whole architecture. For this use-case Amazon EMR would be a good choice. Please refer to the following sketch that could be a possible workflow. The architecture also has a component of auto-scaling which is cost-effective and helps to manage a large traffic. 
+For a highly-available, fault-tolerant, and low latency cloud architecture: it is a good practice to decouple your storage layer and compute/analytics components. This is to ensure that failure of one component does not lead to the failure of the whole architecture. For this use-case ![Amazon EMR](https://aws.amazon.com/emr/?whats-new-cards.sort-by=item.additionalFields.postDateTime&whats-new-cards.sort-order=desc) would be a good choice. Please refer to the following sketch that could be a possible workflow. The architecture also has a component of auto-scaling which is cost-effective and helps to manage a large traffic. 
 
 ![Image of Cloud Architecture](https://github.com/stutinayak/Reimagined_party_distribution/blob/master/images/Cloud%20architecture.png)
